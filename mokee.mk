@@ -1,14 +1,14 @@
-# CyanogenMod Specific Changes
+# MoKee OpenSource Specific Changes
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2048
 TARGET_SCREEN_WIDTH := 1536
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_tablet_wifionly.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/flounder/aosp_flounder.mk)
@@ -31,10 +31,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml
 
-# CM Overlays
-DEVICE_PACKAGE_OVERLAYS += device/htc/flounder/overlay-cm
+# MK Overlays
+DEVICE_PACKAGE_OVERLAYS += device/htc/flounder/overlay-mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_flounder
+PRODUCT_NAME := mk_flounder
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 9
