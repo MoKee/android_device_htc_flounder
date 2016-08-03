@@ -32,7 +32,7 @@ BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/htc/flounder
-TARGET_KERNEL_CONFIG := cyanogenmod_flounder_defconfig
+TARGET_KERNEL_CONFIG := mokee_flounder_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_CMDLINE := androidboot.selinux=enforcing
 TARGET_PREBUILT_KERNEL := false
@@ -46,9 +46,9 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/flounder/overlay-mk
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=flounder \
-    BUILD_FINGERPRINT=google/volantis/flounder:6.0.1/MOB30P/2960889:user/release-keys \
-    PRIVATE_BUILD_DESC="volantis-user 6.0.1 MOB30P 2960889 release-keys" \
-    BUILD_ID=MOB30P
+    BUILD_FINGERPRINT=google/volantis/flounder:6.0.1/MOB30W/3031100:user/release-keys \
+    PRIVATE_BUILD_DESC="volantis-user 6.0.1 MOB30W 3031100 release-keys" \
+    BUILD_ID=MOB30W
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := mk_flounder
